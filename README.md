@@ -1,12 +1,12 @@
 # Discovering Disease Outbreaks Starting Repository
 
-Starter repository for Manning PBC: Discovering and Tracking Disease Outbreaks with Data Science and Python
+Implementation repository for Manning PBC: Discovering and Tracking Disease Outbreaks with Data Science and Python
 
-## Setup
+## Commentary
 
-This project requires Python 3.7 installed with the [anaconda distribution](https://www.anaconda.com/distribution/).
+Few things I would have liked to have solved in the end:
 
-To install the required libraries in a new virtual environment, run `conda env create -f environment.yml` from the project root 
-directory. This will install the  libraries into a virtual env that can be activated with `conda activate discovering-disease-outbreaks`. 
+- Matching no matter case (Rio De Janeiro vs Rio de Janeiro), easily solved - but leads to other problems (Tons of "cities" called 'Of' and 'Man' will be found). Decided this is likely easier to adjust in the input data instead for this case. For a real case I'd likely dive deeper into what exactly Man and Of is in the city dataset - unsurprisingly "Man City" does not give great Google results 😅
+- My regex implementation required me to sort in descending order in the end to ensure 'Miami Beach' would not be caught as 'Miami', there might be better ways to do this than to sort (and I'm sure sorting brings other problems)
 
-The data is located at `data/headlines.txt`. Run `jupyter notebook` to start a Jupyter Notebook and get coding!
+However, I'm not too interested in learning Regex - rather the data science. This in addition to most remaining missed headlines being from states (not included in the task) or certain oddities such as military bases makes me feel fairly okay with the solution in the end.
