@@ -4,6 +4,8 @@ Implementation repository for Manning PBC: Discovering and Tracking Disease Outb
 
 ## Results
 649 headlines found a home in the dataframe in the end, 42 missed (of which some should not have been missed depending on capitalization, read more below)
+
+After comparing to the authors solution - I also notice I did not consider that certain cities will appear more than once (for instance in different countries). Oops 🙈
 ## Commentary
 
 Few things I would have liked to have solved in the end:
