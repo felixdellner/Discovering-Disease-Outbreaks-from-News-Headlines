@@ -2,6 +2,8 @@
 
 Implementation repository for Manning PBC: Discovering and Tracking Disease Outbreaks with Data Science and Python
 
+## Results
+649 headlines found a home in the dataframe in the end, 42 missed (of which some should not have been missed depending on capitalization, read more below)
 ## Commentary
 
 Few things I would have liked to have solved in the end:
